@@ -1,0 +1,20 @@
+*{
+    color: rgb(195, 226, 43);
+}
+
+.highlight{
+    color:crimson;
+    font-size: 2rem;}   
+
+.center{
+    text-align: end;
+}
+
+#p1{
+    text-align: center;
+    color:greenyellow;
+}
+
+h1.center{
+    background-color: cadetblue;
+}

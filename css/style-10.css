@@ -1,0 +1,16 @@
+
+/*ziyaret edilmedik linklerin renkini degistirir */
+a:link{
+    color: aqua;
+}
+
+/*ziyaret edilen linklerin renkini degistirmek icin kullanilir*/
+a:visited{
+    color:red;
+}
+
+a:hover{
+    background-color: black;
+    text-decoration:line-through;
+    cursor: crosshair;
+}
