@@ -1,0 +1,24 @@
+.kutu1{
+    background-color: darkcyan;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.kutu2{
+    background-color: greenyellow;
+    margin:20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.kutu3{
+    background-color: coral;
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+div.kutu3.em{
+    margin:20px;
+}
