@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    font-family: Roboto;
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #454545;
+    text-align: center;
+    padding: 12px;
+}
+
+header a{
+    color:beige;
+    padding: 15px;
+    margin: 10px;
+}
+
+header img{
+    width: 15px;
+    height: 17px;
+}
+
+header:hover{
+    color: white;
+}
+
+main section{
+    margin-bottom: 10px;
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgba(16, 6, 6, 0.87);
+    color: white;
+}
+
+main section.iphone14{
+    background-color: white;
+    color: black;
+}
+main section h2{
+    font-size: 3.4rem;
+    margin-top:0;
+    margin-bottom: -20px;
+
+}
+
+main section p{
+    font-size: 2rem;
+    color: rgb(69, 65, 65);
+}
+main section.iphone14 p{
+    color:#212020;
+}
+
+p.satis-tarihi{
+    font-size: 1.5rem;
+    color:rgb(148, 138, 138)
+}
+
+main section p.linkler{
+    font-size: 1.4rem;
+    margin-bottom: 70px;
+}
+main section p.linkler a{
+    margin-right: 25px;
+    color: rgb(67, 67, 186);
+}
+main section.watch h2 img{
+    width:40px;
+    height: auto;
+}
+
+main section.watch .series{
+    font-size: 1.3rem;
+    color: red;
+    letter-spacing:4px;
+}
