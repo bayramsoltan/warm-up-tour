@@ -7,6 +7,8 @@
     <title>My Resume</title>
 </head>
 <body>
+
+<form action="" method="post">
 <table>
     <tr>
         <td>
@@ -46,16 +48,51 @@
                     <td>LinkedIn Adresi</td>
                     <td> <input type="text"></td>
                 </tr>
+                <tr>
+                    <td>Telefon</td>
+                    <td> <input type="text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                    <button type="submit" id="btn">Gonder</button>
+                </td>
+            </tr>
             </table>
         </td>
 <td>
-    <table>
+ <table>
+    <tr>
+        <td>Programlama dilleri</td>
+        <td>
+        <input type="checkbox" name="programming" id="javas">
+        <label for="javas">JavaScript</label> <br>
+        <input type="checkbox" name="programming" id="pyth">
+        <label for="pyth">Python</label> <br>
+        <input type="checkbox" name="programming" id="check">
+        <label for="check">Java</label> <br>
+        </td>
+     </tr>
+    <tr>
+<td>Profil Fotoğrafı</td>
+<td><input type="file" title="Resim Secin" alt="upload image"></td>
 <tr>
-    <td></td>
+    <td>
+        <label for="datee">Doğum Tarihi</label>
+    </td>
+    <td>
+        <input type="date" name="date" id="datee">
+    </td>
 </tr>
-    </table>
+<tr>
+    <td><label for="adress">Adres</label></td>
+    <td><textarea name="areaoftext" id="adress" cols="30" rows="6"></textarea></td>
+</tr>
+    </tr>
+ </table>
 </td>
     </tr>
 </table>
+</form>
 </body>
 </html>
