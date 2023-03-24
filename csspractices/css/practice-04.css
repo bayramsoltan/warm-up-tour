@@ -2,6 +2,7 @@ section.container{
     background-color: rgb(203, 180, 151);
     width: 60%;
     border-radius: 2rem;
+    margin: auto;
 }
 
 img{
