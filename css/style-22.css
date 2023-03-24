@@ -1,0 +1,15 @@
+nav.main-menu ul{
+    list-style-type: none;
+    margin:0;
+    padding: 15px;
+    background-color: aqua;
+    display: none;
+}
+
+nav.main-menu button{
+    display: block;
+}
+nav.main-menu:hover ul{
+    display: inline-block;
+    background-color: crimson;
+}
