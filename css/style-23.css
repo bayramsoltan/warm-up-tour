@@ -33,3 +33,20 @@ ul.liste li:nth-child(3){
 ul.liste li:last-child{
     text-decoration: underline;
 }
+
+.price-list{
+    margin: auto;
+}
+
+.price-list tr:nth-child(odd){
+    background-color: bisque;
+}
+
+.price-list tr:nth-child(even){
+    background-color: rgb(192, 181, 167);
+}
+
+.price-list tr:nth-child(3n+1){
+    background-color: rgb(38, 204, 110);
+}
+
