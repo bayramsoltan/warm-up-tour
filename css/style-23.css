@@ -1,0 +1,35 @@
+.login-form input[type="text"]{
+    background-color: aqua;
+    border: none;
+    padding: 5px 10px;
+    color: black;
+
+}
+
+.login-form input[type="text"]:focus{
+    background-color: rgb(255, 234, 0);
+
+}
+
+a:active{
+    background-color: blue;
+
+}
+
+a:hover{
+    color: red;
+}
+
+.chek-menu:checked{
+    outline: 3pxu;
+}
+
+ul.liste li:first-child{
+    color: violet;
+}
+ul.liste li:nth-child(3){
+    text-decoration: line-through;
+}
+ul.liste li:last-child{
+    text-decoration: underline;
+}

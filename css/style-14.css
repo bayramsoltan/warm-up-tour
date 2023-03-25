@@ -27,6 +27,7 @@ nav.main-menu{
 
 .main-menu-link{
     padding: 5px;
+    background-color: aqua;
 }
 
 .main-menu-link:hover{
