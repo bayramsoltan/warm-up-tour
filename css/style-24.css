@@ -14,7 +14,7 @@ p.about::selection{
     color: blueviolet;
     font-size: 2rem;
 }
-title::before{
+.title::before{
     content: "1";
     display: inline-block;
     width: 5px;
@@ -23,7 +23,7 @@ title::before{
     margin-right: 10px;
 }
 
-title::after{
+.title::after{
     content: "2";
     display: inline-block;
     width: 5px;

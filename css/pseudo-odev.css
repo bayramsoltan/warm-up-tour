@@ -1,0 +1,28 @@
+nav.menu{
+    background-color: rgb(255, 196, 0);
+    width: 50vw;
+    text-align: center;
+}
+
+nav.menu .months li{
+    display: inline-block;
+    padding: 10px;
+    color: beige;
+}
+
+nav.menu .months li:nth-child(4){
+    color: black;
+}
+nav.menu .months li:hover{
+    color: brown;
+}
+
+.months::before{
+    content: '◀️';
+    margin-right: 10px;
+}
+
+.months::after{
+    content: "▶️";
+    margin-left: 10px;
+}
