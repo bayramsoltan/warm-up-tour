@@ -1,9 +1,16 @@
 .chk-mode{
-    display: none;
+   display: none;
 }
 
 
 .chk-mode:checked + .content{
     background-color: black;
     color: aliceblue;
+}
+
+.btn-mode{
+    background-color: blueviolet;
+    padding: 5px 10px;
+    display: inline-block;
+    cursor: pointer;
 }
