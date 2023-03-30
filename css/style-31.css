@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between; /* Cok guzel bir ozellik*/
     height: 100vh;
-}
+}   
 
 .container div:nth-child(1){
     background-color: aquamarine;

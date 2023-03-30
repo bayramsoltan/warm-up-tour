@@ -1,0 +1,47 @@
+html,body{
+    height: 100%;
+
+}
+body{
+    display: flex; /*  childlerini etkiler grandchild etkilenmez */
+    margin:0;
+    flex-wrap: wrap;
+}
+.kutu1{
+    background-color: yellow;
+    flex: 2 0 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kutu1-1{
+    background-color: green;
+    flex: 1;
+}
+.kutu1-2{
+    background-color: greenyellow;
+    flex: 3;
+    gap: 15px;
+}
+
+.kutu2{
+    background-color: burlywood;
+    flex: 1 0 50px;
+}
+
+.kutu3{
+    background-color: rgb(255, 8, 0);
+    flex: 2 0 150px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 5px;
+}
+
+.kutu3 > div{
+    background-color: blue;
+    flex:0 0 30px;
+    padding: 20px;
+}
