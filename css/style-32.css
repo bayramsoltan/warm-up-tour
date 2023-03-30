@@ -2,13 +2,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap:20px; /* bir biri arasindaki bosluk ->  gap, row-gap, column-gap parent tarafindan verilir. 
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap:5px; /* bir biri arasindaki bosluk ->  gap, row-gap, column-gap parent tarafindan verilir. 
     */
+
+    /* flex-wrap: wrap -> sigmayanlar kaydirilir| nowrap sigmanayanlar kaydirilmaz | wrap-reverse */
 }
 
 .container div:nth-child(1){
     background-color: aquamarine;
-    flex:1;
+    flex:1 0 200px;
 }
 .container div:nth-child(2){
     background-color: blueviolet;
