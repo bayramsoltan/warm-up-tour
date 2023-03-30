@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px; /* bir biri arasindaki bosluk ->  gap, row-gap, column-gap parent tarafindan verilir. 
+    */
+}
+
+.container div:nth-child(1){
+    background-color: aquamarine;
+    flex:1;
+}
+.container div:nth-child(2){
+    background-color: blueviolet;
+}
+
+.container div:nth-child(3){
+    background-color: rgb(226, 223, 43);
+}
+.container div:nth-child(4){
+    background-color: rgb(43, 226, 95);
+}
+
+.container div:nth-child(5){
+    background-color: rgb(226, 43, 162);
+}
