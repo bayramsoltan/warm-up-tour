@@ -1,0 +1,13 @@
+.title1{
+    border: 1px solid gray;
+}
+
+.title2{
+    border-left: 10px solid brown;
+    border-right: 10px solid brown;
+    display: inline-block;
+}
+.title3{
+    border:3px solid black;
+    border-radius: 10px solid;
+}
