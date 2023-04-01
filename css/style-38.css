@@ -1,0 +1,38 @@
+body{
+    background-image: url("/img/bg_360.jpg");
+    background-repeat: repeat-x;
+    background-position: top center;
+    height: 100px;
+    padding: 30px;
+}
+
+.banner1{
+    background-image: url("/img/nature_720.jpg");
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner2{
+    background-image: url("/img/nature_720.jpg");
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner3{
+    background-image: url("/img/nature_720.jpg");
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 3rem;
+}

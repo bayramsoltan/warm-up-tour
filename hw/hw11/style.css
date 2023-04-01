@@ -1,9 +1,16 @@
-
-
-
-
+.checkbox{
+    display: none;
+}
 .checkbox:checked + div.bayram{
     display: none;
 }
 
+.labelbutton{
+    background-color: blueviolet;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 
+div.bayram{
+    background-color: darkgray;
+}

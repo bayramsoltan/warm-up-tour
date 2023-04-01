@@ -1,0 +1,37 @@
+:root{
+    --color1:cyan;
+    --color2:rgb(46, 23, 23);
+}
+
+.button-group{
+    display: flex;
+    gap: 2px;
+}
+
+.button-group > button{
+    background-color: var(--color2);
+    color: var(--color1);
+    padding: 10px 15px;
+    cursor: pointer;
+    flex: 0 1 100px;
+    border: 3px solid var(--color1);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button-group> button:first-child{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.button-group> button:last-child{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.button-group > button:hover{
+    background-color: var(--color1);
+    color: var(--color2);
+    border-color: var(--color2);
+}
