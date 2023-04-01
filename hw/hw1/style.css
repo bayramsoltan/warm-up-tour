@@ -1,32 +1,35 @@
-.menu .btn-mode i{
-    color: rgb(252, 254, 255);
+:root{
+    --color1:rgba(85, 75, 93, 0.91);
+    --color2:black;
+    --color3:white;
 }
-
-.chk{
+body{
+    margin: 5px;
+    color: var(--color3);
+}
+.checkbox{
     display: none;
 }
-.menu .open > ul{
-    background-color: black;
-    text-align: center;
+.checkbox:checked + div.bayram{
+    display: none;
 }
 
-.menu .open ul li a{
-    text-decoration:none;
-    color: black;
-    padding: 20px;
+.labelbutton{
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 5px;
+    cursor: pointer;
 }
 
-.menu .open ul li{
-    list-style-type:'::';
-}
-
-.menu .btn-mode{
-    display: block;
-    border:none;
-    background-color: black;
-}
-
-.menu .chk:checked .open > ul{
+div.bayram ul{
+    list-style:inside;
+    list-style-type: ':: ';
+    padding: 5px;
+    background-color: var(--color1) ;
     display: inline-block;
-    background-color: rgb(190, 175, 99);
+}   
+
+div.bayram ul li > a{
+    text-decoration: none;
+    color: var(--color3);
 }
