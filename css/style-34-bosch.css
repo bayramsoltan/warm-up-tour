@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width:50px;
+}
+
+header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+main{
+    display:flex;
+    align-items: center;
+
+}
+
+main .leftside{
+    
+}
+

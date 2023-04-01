@@ -1,0 +1,9 @@
+
+
+
+
+.checkbox:checked + div.bayram{
+    display: none;
+}
+
+
