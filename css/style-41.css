@@ -1,0 +1,29 @@
+.input-group{
+    background-color: black;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+}
+
+.input-group input{
+    background:none;
+    border: none;
+    outline:none;
+    color: aquamarine;
+    padding: 0 10px;
+}
+
+.input-group button{
+    border-radius: 30px;
+    background-image: linear-gradient(to left,yellow, black);
+    border:0;
+    position:absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+}
+.input-group button:hover{
+    background-color: rgb(99, 47, 47);
+    color: yellow;
+}

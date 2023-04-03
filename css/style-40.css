@@ -12,3 +12,15 @@
     position: relative;
     bottom: 20px;
 }
+
+.parent{
+    height: 50vh;
+    background-color: cadetblue;
+}
+
+.parent img{
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: 400px;
+}
