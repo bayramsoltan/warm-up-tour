@@ -43,7 +43,7 @@ main h1{
 section.icerik div:nth-child(2){
     line-height: 1rem;
     letter-spacing: 0.1rem;
-    text-align: right;
+    text-align: left;
 }
 
 footer.alt-kisim{
