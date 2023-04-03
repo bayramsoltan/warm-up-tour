@@ -1,0 +1,14 @@
+.box{
+    width: 100px;
+    height: 100px;
+}
+.box1{
+    background-color: black;
+    position: relative;
+    left: 10px;
+}
+.box2{
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    bottom: 20px;
+}
