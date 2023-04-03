@@ -1,0 +1,56 @@
+:root{
+    --color1:crimson;
+    --color2:darkgray;
+    --color3:gray;
+    --color4:rgb(32, 12, 12);
+    --color5:aliceblue;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tablo thead tr:first-child{
+    background-color: var(--color4);
+    color: var(--color5);
+}
+.tablo tfoot tr:last-child{
+    background-color: var(--color4);
+    color: var(--color5);
+}
+.tablo tbody tr:nth-child(even){
+    background-color: var(--color3);
+}
+.tablo tbody tr:nth-child(odd){
+    background-color: var(--color2);
+}
+
+.tablo tfoot tr:first-child{
+    text-align:right;
+}
+.tablo tfoot tr td i:last-child{
+    padding: 10px;
+}
+.tablo tbody tr td i:last-child{
+    padding: 10px;
+}
+
+.tablo tbody tr:hover{
+    background-color: red;
+}
+
+div.buttons{
+    text-align:justify;
+    
+}
+div.buttons button{
+    background-color: var(--color1);
+    color: var(--color5);
+    padding: 10px;
+    font-size: 20px;
+}
+div.buttons button:hover{
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+
+

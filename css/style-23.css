@@ -21,7 +21,7 @@ a:hover{
 }
 
 .chek-menu:checked{
-    outline: 3pxu;
+    outline: 3px;
 }
 
 ul.liste li:first-child{
