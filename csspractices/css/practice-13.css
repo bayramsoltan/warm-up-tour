@@ -1,0 +1,77 @@
+body{
+    /*width: 100vw;
+    height: 100vh;*/
+    font-family: 'Roboto',sans-serif;
+    padding:4rem 2rem;
+}
+
+header.ust-bolum{
+    background-color: rgb(80, 204, 162);
+    padding: 2rem;
+}
+header.ust-bolum ul{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    list-style-type: none;
+}
+header.ust-bolum ul a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+header.ust-bolum ul a:hover{
+    color: crimson;
+}
+main.orta-bolum{
+    background-color: aliceblue;
+    padding: 1rem 1 rem 2rem 1rem;
+}
+main h1{
+    text-transform: uppercase;
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.orta-bolum section.icerik{
+    display: flex;
+    gap: 2rem;
+}
+
+section.icerik div:nth-child(2){
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+    text-align: right;
+}
+
+footer.alt-kisim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color:rgb(80, 204, 162);
+}
+
+footer h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer.alt-kisim ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style-type: none;
+}
+
+footer.alt-kisim ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+footer.alt-kisim ul a:hover{
+    color: chartreuse;
+}
