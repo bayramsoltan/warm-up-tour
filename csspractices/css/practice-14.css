@@ -1,0 +1,35 @@
+body{
+    font-family: "Poppins", sans-serif;
+    padding:0;
+    margin:0;
+    background-color: bisque;
+}
+
+h1.baslik{
+    font-size: 20em; /* rem bodyden alir 16px gore, em ise parentten alir*/
+    text-transform: uppercase;
+    font-weight: 900;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    background-image: url(../img/seyahat3.jpeg);
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+h2{
+    font-size: 5em;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    background-image: url(../img/seyahat3.jpeg);
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
