@@ -1,3 +1,51 @@
-div.alt{
-    background-color: aquamarine;
+:root{
+    --color1:rgb(215, 158, 149);
+    --color2:rgb(221, 83, 111);
+    --color3:beige;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+
+.discovery div.ust{
+    display: flex;
+    flex-direction: row;
+}
+
+.discovery .ust div:nth-child(1){
+    background-color:var(--color2);
+    flex:1 0;
+    height: 20px;
+}
+
+.discovery .ust div:nth-child(2){
+    background-color: var(--color1);
+    flex:4 0;
+    height: 20px;
+
+}
+.discovery div.alt{
+    background-color: var(--color3);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.discovery div.alt .bir{
+    height: 60px;
+    width: 60px;
+    background-color: var(--color2);
+    border-radius: 50%;
+    color: var(--color3);
+    text-align:center;
+    font-size: 2rem;
 }

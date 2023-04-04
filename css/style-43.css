@@ -1,0 +1,99 @@
+:root{
+    --color1:rgb(18, 222, 253);
+    --color2:rgb(225, 181, 35);
+    --color3:rgb(39, 27, 27);
+    --color4:rgba(255, 255, 255, 0.818);
+}
+body{
+    font-family: 'Ubuntu';
+    margin:0;
+}
+
+section.topbar{
+    background-color:var(--color3);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    color:var(--color4);
+}
+
+section.menubar ul,
+section.topbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap:10px;
+}
+
+section.topbar ul a{
+    color: var(--color2);
+    text-decoration: none;
+}
+
+section.menubar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top:0;
+    background-color: var(--color4);
+    z-index: 1;
+}
+
+section.menubar img{
+    width: 300px;
+    height: auto;
+}
+section.menubar ul a{
+    text-decoration: none;
+    background-color: var(--color2);
+    color: var(--color3);
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 5px;
+}
+section.menubar ul a:hover{
+    background-color: var(--color1);
+}
+
+section.slider{
+    background-image: url(../img/nature_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    position: relative;
+}
+section.slider h2{
+    position:absolute;
+    bottom: 30px;
+    left: 0;right: 0;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color4);
+    font-weight: 900;
+    text-shadow: 0 0 10px var(--color3);
+}
+
+main{
+    padding: 15px;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    color:var(--color4);
+    background-color: green;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

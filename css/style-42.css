@@ -1,0 +1,16 @@
+nav.menu{
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    left: 10px;
+    padding: 20px;
+    z-index: 1;
+}
+
+table.price-list thead{
+    background-color: crimson;
+    position: sticky;
+    top:10px;
+    z-index: 2;
+}
