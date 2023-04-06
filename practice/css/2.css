@@ -1,0 +1,37 @@
+body{
+    --color1:black;
+    --color2:rgb(255, 162, 0);
+    --color3:rgb(241, 247, 200);
+}
+
+div.buttons button{
+    width: 200px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size:1.4rem;
+    font-family: 'Questrial', sans-serif;
+    
+}
+
+.buttons button:first-child{
+    background-color:var(--color1);
+    color: var(--color3);
+    transition: all ease-in-out 1s;
+}
+
+.buttons button:nth-child(2){
+    background-color:var(--color2);
+    color: var(--color1);
+    transition: linear ease-in 1s;
+}
+
+.buttons button:first-child:hover{
+    background-color: rgb(26, 255, 0);
+   transform: rotate(10deg);
+}
+.buttons button:nth-child(2):hover{
+    background-image: linear-gradient(35deg,crimson,teal,green);
+    scale:1.3;
+}

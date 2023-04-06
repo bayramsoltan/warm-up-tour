@@ -1,0 +1,48 @@
+body{
+    font-family: 'Ubuntu';
+}
+
+.main-menu{
+    display: inline-block;
+}
+
+.main-menu ul:first-child{
+    background-color: rgb(58, 104, 104);
+    padding: 20px;
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+    
+}
+
+.main-menu ul:first-child li{
+    list-style-type: none;
+}
+
+.main-menu ul:first-child li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.main-menu ul:nth-child(2){
+    background-color:rgb(232, 245, 245);
+    padding: 25px;
+    margin-top: 0;
+    border: 1px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.main-menu ul:nth-child(2) li a{
+    text-decoration: none;
+    color: black;
+}
+
+.chkMenu{
+    display: none;
+}
+
+.chkMenu
+
