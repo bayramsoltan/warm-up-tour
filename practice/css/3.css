@@ -33,6 +33,7 @@ body{
     border-bottom-right-radius: 15px;
     font-size: 1.4rem;
     text-align: center;
+    transition: all ease-in-out 1s;   
 }
 
 .main-menu ul:nth-child(2) li a{
@@ -40,9 +41,17 @@ body{
     color: black;
 }
 
+.main-menu ul:nth-child(2){
+    display: none;
+}
 .chkMenu{
     display: none;
 }
+.chkMenu:checked + nav > ul:nth-child(2){
+    display: inline-block;
+}
 
-.chkMenu
-
+.main-menu ul li:hover{
+    scale:1.2;
+    color: violet;
+}
