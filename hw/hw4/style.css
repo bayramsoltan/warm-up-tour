@@ -1,7 +1,70 @@
-:root{
-    --color1:
+*{
+    margin: 0;
+    padding: 0;
 }
-body{
-    background-color: purple;
+header{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header h2{
+    color: aliceblue;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+header ul {
+    display: flex;
+    gap:10px;
+}
+header ul li{
+    list-style-type: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+main h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem 0;
+}
+main{
+    padding: 0 200px 200px 200px;
 }
 
+main section{
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:20px;
+}
+section div p{
+    margin-bottom: 15px;
+}
+section div p:first-child::first-letter{
+    font-size: 2rem;
+}
+
+footer{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    padding:2rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    gap:2rem;
+}
+footer ul li a{
+    text-decoration: none;
+    color:aliceblue;
+}
