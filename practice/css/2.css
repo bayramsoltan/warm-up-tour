@@ -13,6 +13,7 @@ div.buttons button{
     font-size:1.4rem;
     font-family: 'Questrial', sans-serif;
     
+    
 }
 
 .buttons button:first-child{
@@ -25,6 +26,7 @@ div.buttons button{
     background-color:var(--color2);
     color: var(--color1);
     transition: linear ease-in 1s;
+    
 }
 
 .buttons button:first-child:hover{
