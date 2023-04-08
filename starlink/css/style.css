@@ -1,0 +1,89 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+}
+.banner{
+    height: 100vh;
+    background-image: url("../img/Marketing_LandingFeatured_Redesign_Mobile.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+@media screen and ( min-width:960px ){
+    .banner{
+        background-image: url("../img/Marketing_LandingFeatured_Redesign.webp");
+    }
+}
+.banner .navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 60px;
+}
+.banner .navbar .logos{
+    text-align: center;
+    flex: 1;
+}
+
+@media screen and (min-width:1280px) {
+    .banner .navbar .logos{
+        flex:0;
+        text-align: left;
+    }
+}
+.banner .navbar .logo{
+    width:180px;
+    height: auto;
+    display: none;
+}
+@media screen and (min-width:1280px) {
+    .banner .navbar .logo{
+        display: inline;
+    }
+}
+.banner .navbar .logo-mobile{
+    width:130px;
+    height: auto;
+}
+@media screen and (min-width:1280px) {
+    .banner .navbar .logo-mobile{
+        display: none;
+    }
+}
+.banner .navbar .first-nav{
+    display:none;
+}
+@media screen and (min-width:1280px) {
+    .banner .navbar .first-nav{
+        display:block;
+    }
+}
+.banner .navbar .second-nav li:nth-child(1),
+.banner .navbar .second-nav li:nth-child(2){
+    display:none;
+}
+@media screen and (min-width:1280px) {
+    .banner .navbar .second-nav li:nth-child(1),
+    .banner .navbar .second-nav li:nth-child(2){
+        display:block;
+    }
+}
+.banner .navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.banner .navbar ul a{
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.banner .navbar .second-nav li:last-child a{
+    font-size:1.6rem;
+}

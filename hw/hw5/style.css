@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    ;
+}
+
+.container{
+    max-width: 1200px;
+    margin:auto;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.337);
+
+}
+
+header .nav-menu ul, .nav-social ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+
+    list-style: none;
+
+}
+
+header .nav-menu ul li a, .nav-social ul li a{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+}
+
+header .nav-menu ul li {
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+header .nav-menu ul li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color:crimson;
+}
+
+header .nav-menu ul li a:hover::after{
+    width: 100%;
+}
+
+.nav-social ul li i{
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+.nav-social ul li a:hover i{
+    color:crimson;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+main .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+}
+main .left-bottom{
+    margin-top: 50px;
+}
+
+main .left h1{
+    position:relative;
+    margin: 10px 0;
+}
+
+main .right img{
+    position: relative;
+    left: -30px;
+    z-index: -1;
+    width: 800px;
+}
+
+main .left p{
+    font-size: smaller;
+}
+
+main .left button{
+    outline: none;
+    border: none;
+    padding: 15px 25px;
+    position: relative;
+}
+main .left button::after{
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: -5px;
+        left: -5px;
+        border-bottom: 4px solid rgb(0, 0, 0);
+        border-left: 4px solid rgba(0, 0, 0, 0.716);
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+}
+
+main .left button::before{
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        border-top: 4px solid rgb(0, 0, 0);
+        border-right: 4px solid rgba(0, 0, 0, 0.667);
+        border-radius:7px;
+        -webkit-border-radius:7px;
+        -moz-border-radius:7px;
+        -ms-border-radius:7px;
+        -o-border-radius:7px;
+}
