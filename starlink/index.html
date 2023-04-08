@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Order Starlink</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <input type="checkbox" id="chkMenu" class="chkMenu">
+    <nav class="side-menu">
+      <label for="chkMenu"><i class="fa-solid fa-times"></i></label>
+      <ul class="menu1">
+        <li><a href="#">MAP</a></li>
+        <li><a href="#">RESOURCES</a></li>
+        <li><a href="#">SPECIFICATIONS</a></li>
+        <li><a href="#">US <i class="fa-solid fa-globe"></i></a></li>
+        <li><a href="#">SIGN IN</a></li>
+      </ul>
+    </nav>
     <section class="banner">
-        <div class="navbar">
-            <div class="logos">
-                <img src="img/logo_white.png" alt="Starlink" class="logo-mobile">
-            <img src="img/logo_x_white.png" alt="Starlink" class="logo">
-            </div>
-            <nav class="first-nav">
-                <ul>
-                    <li><a href="#">RESIDENTIAL</a></li>
-                    <li><a href="#">BUSINESS</a></li>
-                    <li><a href="#">ROAM</a></li>
-                    <li><a href="#">MARITIME</a></li>
-                    <li><a href="#">AVIATION</a></li>
-                    <li><a href="#">IOT</a></li>
-                </ul>
-            </nav>
-            <nav class="second-nav">
-                <ul>
-                    <li><a href="#">TECHNOLOGY</a></li>
-                    <li><a href="#">SUPPORT</a></li>
-                    <li><a href="#"><label><i class="fa-solid fa-bars"></i></label></a></li>
-                </ul>
-            </nav>
+      <div class="navbar">
+        <div class="logos">
+          <img src="img/logo_x_white.png" class="logo-mobile" alt="Starlink" />
+          <img src="img/logo_white.png" class="logo" alt="Starlink" />
         </div>
+        <nav class="first-nav">
+          <ul class="menu2">
+            <li><a href="#">RESIDENTIAL</a></li>
+            <li><a href="#">BUSINESS</a></li>
+            <li><a href="#">ROAM</a></li>
+            <li><a href="#">MARITIME</a></li>
+            <li><a href="#">AVIATION</a></li>
+            <li><a href="#">IOT</a></li>
+          </ul>
+        </nav>
+        <nav class="second-nav">
+          <ul>
+            <li><a href="#">TECHNOLOGY</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li>
+              <a href="#"
+                ><label for="chkMenu"><i class="fa-solid fa-bars"></i></label
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </section>
-</body>
+  </body>
 </html>

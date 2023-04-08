@@ -3,6 +3,7 @@ body{
     margin:0;
     padding:0;
 }
+/* BANNER */
 .banner{
     height: 100vh;
     background-image: url("../img/Marketing_LandingFeatured_Redesign_Mobile.webp");
@@ -15,6 +16,7 @@ body{
         background-image: url("../img/Marketing_LandingFeatured_Redesign.webp");
     }
 }
+/* NAVBAR */
 .banner .navbar{
     display:flex;
     justify-content: space-between;
@@ -23,12 +25,11 @@ body{
 }
 .banner .navbar .logos{
     text-align: center;
-    flex: 1;
+    flex:1;
 }
-
 @media screen and (min-width:1280px) {
     .banner .navbar .logos{
-        flex:0;
+        flex: 0;
         text-align: left;
     }
 }
@@ -45,6 +46,8 @@ body{
 .banner .navbar .logo-mobile{
     width:130px;
     height: auto;
+    position: relative;
+    z-index: 100;
 }
 @media screen and (min-width:1280px) {
     .banner .navbar .logo-mobile{
@@ -71,19 +74,81 @@ body{
 }
 .banner .navbar ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     display: flex;
     align-items: center;
     gap:10px;
 }
 .banner .navbar ul a{
     text-decoration: none;
-    color:white;
+    color: white;
     padding: 10px;
     font-size: 0.9rem;
     font-weight: 700;
 }
 .banner .navbar .second-nav li:last-child a{
-    font-size:1.6rem;
+    font-size: 1.6rem;
+}
+/* SIDE MENU */
+nav.side-menu{
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    width:100%;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+@media screen and (min-width:600px) {
+    nav.side-menu{
+        left:auto;
+        width:200px;
+    }
+}
+nav.side-menu ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    margin-top: 30px;
+    line-height: 50px;
+}
+nav.side-menu ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    display: block;
+}
+nav.side-menu ul.menu1 i{
+    font-size: 1.3rem;
+    margin-left:5px;
+}
+nav.side-menu > label{
+    font-size: 1.5rem;
+}
+.chkMenu{
+    display: none;
+}
+.chkMenu:checked + nav.side-menu{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+label[for="chkMenu"]{
+    cursor:pointer;
 }
