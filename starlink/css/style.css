@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    position: relative;
 }
 @media screen and ( min-width:960px ){
     .banner{
@@ -72,6 +73,7 @@ body{
         display:block;
     }
 }
+
 .banner .navbar ul{
     list-style-type: none;
     margin:0;
@@ -87,9 +89,12 @@ body{
     font-size: 0.9rem;
     font-weight: 700;
 }
+
 .banner .navbar .second-nav li:last-child a{
     font-size: 1.6rem;
 }
+
+
 /* SIDE MENU */
 nav.side-menu{
     position: fixed;
@@ -106,18 +111,21 @@ nav.side-menu{
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
     -o-transform: translateX(100%);
-    transition: transform 1s;
-    -webkit-transition: transform 1s;
-    -moz-transition: transform 1s;
-    -ms-transition: transform 1s;
-    -o-transition: transform 1s;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    z-index: 99;
 }
+
 @media screen and (min-width:600px) {
     nav.side-menu{
         left:auto;
         width:200px;
     }
 }
+
 nav.side-menu ul{
     list-style-type: none;
     margin:0;
@@ -125,19 +133,24 @@ nav.side-menu ul{
     margin-top: 30px;
     line-height: 50px;
 }
+
 nav.side-menu ul a{
     text-decoration: none;
     color: white;
     font-size: 0.9rem;
     display: block;
 }
+
 nav.side-menu ul.menu1 i{
     font-size: 1.3rem;
     margin-left:5px;
 }
+
 nav.side-menu > label{
     font-size: 1.5rem;
 }
+
+
 .chkMenu{
     display: none;
 }
@@ -149,6 +162,54 @@ nav.side-menu > label{
     -o-transform: translateX(0);
 }
 
+.banner::before{
+    content: '';
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+}
+
+.chkMenu:checked ~.banner::before{
+    content: "";
+    background-color: rgb(188, 183, 183);
+    position: absolute;
+    top: 0; left: 0; right: 0;bottom: 0;
+    opacity: 0.3;
+    z-index: 1;
+}
+
 label[for="chkMenu"]{
     cursor:pointer;
+}
+
+
+/* !Banner Content */
+
+.banner .content{
+    color: white;
+    text-align: center;
+
+}
+
+.banner .content h1{
+    font-size: 2.7rem;
+    margin: 0;
+}
+
+.banner .order-form{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    text-align: center;
+}
+.banner .order-form form{
+    display: flex;
+    flex-direction: column;
 }
