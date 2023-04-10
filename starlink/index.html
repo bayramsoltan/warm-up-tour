@@ -21,15 +21,30 @@
     <title>Order Starlink</title>
   </head>
   <body>
-    <input type="checkbox" id="chkMenu" class="chkMenu">
+    <label for="chkMenu" class="side-menu-icon"><i class="fa-solid fa-bars"></i></label>
+    <input type="checkbox" id="chkMenu" class="chkMenu" />
     <nav class="side-menu">
       <label for="chkMenu"><i class="fa-solid fa-times"></i></label>
       <ul class="menu1">
         <li><a href="#">MAP</a></li>
         <li><a href="#">RESOURCES</a></li>
         <li><a href="#">SPECIFICATIONS</a></li>
-        <li><a href="#">US <i class="fa-solid fa-globe"></i></a></li>
+        <li>
+          <a href="#">US <i class="fa-solid fa-globe"></i></a>
+        </li>
         <li><a href="#">SIGN IN</a></li>
+      </ul>
+      <ul class="menu2">
+        <li><a href="#">RESIDENTIAL</a></li>
+        <li><a href="#">BUSINESS</a></li>
+        <li><a href="#">ROAM</a></li>
+        <li><a href="#">MARITIME</a></li>
+        <li><a href="#">AVIATION</a></li>
+        <li><a href="#">IOT</a></li>
+      </ul>
+      <ul class="menu3">
+        <li><a href="#">TECHNOLOGY</a></li>
+        <li><a href="#">SUPPORT</a></li>
       </ul>
     </nav>
     <section class="banner">
@@ -49,29 +64,50 @@
           </ul>
         </nav>
         <nav class="second-nav">
-          <ul>
+          <ul class="menu3">
             <li><a href="#">TECHNOLOGY</a></li>
             <li><a href="#">SUPPORT</a></li>
-            <li>
-              <a href="#"
-                ><label for="chkMenu"><i class="fa-solid fa-bars"></i></label
-              ></a>
-            </li>
           </ul>
         </nav>
       </div>
       <div class="content">
         <h1>ORDER STARLINK</h1>
-        <p>Starlink provides high-speed, low-latency broadband internet across the globe. <br> Within each coverage area, orders are fulfilled on a first-come, first-served basis.</p>
+        <p>
+          Starlink provides high-speed, low-latency broadband internet across
+          the globe. <br />
+          Within each coverage area, orders are fulfilled on a first-come,
+          first-served basis.
+        </p>
       </div>
       <div class="order-form">
         <form action="">
-            <input type="text" placeholder="SERVICE ADRESS">
-            <button>ORDER NOW</button>
+          <input type="text" placeholder="SERVICE ADDRESS" />
+          <button>ORDER NOW</button>
         </form>
-        <div class="map"><a href="">VIEW AVAILABILITY &gt;</a></div>
-        <div class="privacy">By clicking order now, you agree to our <a href="#"> Privacy Policy</a></div>
-        <div class="scrool"><i class="fa-solid fa-chevron-down"></i></div>
+        <div class="map"><a href="#">VIEW AVAILABILITY MAP &gt;</a></div>
+        <div class="privacy">
+          By clicking order now, you agree to our <a href="#">Privacy Policy</a>
+        </div>
+        <div class="scroll"><i class="fa-solid fa-chevron-down"></i></div>
       </div>
     </section>
+    <main>
+      <section>
+        <div><img src="img/Marketing_LandingStreaming_Redesign.webp" alt=""></div>
+        <div>
+          <h2>STREAMING, VIDEO CALLS, ONLINE GAMING & MORE</h2>
+          <p>
+            With Starlink, users can engage in activities that historically have
+            not been possible with satellite internet.
+          </p>
+          <p>
+            Starlink`s high-speed, low-latency service is made possible via the
+            world`s largest constellation of highly advanced satellites
+            operating in a low orbit around the Earth.
+          </p>
+          <button>LEARN MORE</button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

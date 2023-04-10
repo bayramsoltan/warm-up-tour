@@ -1,7 +1,12 @@
+/*
+1. COMMON
+2. BANNER
+*/
 body{
     font-family: 'Roboto', sans-serif;
     margin:0;
     padding:0;
+    background-color: black;
 }
 /* BANNER */
 .banner{
@@ -55,25 +60,16 @@ body{
         display: none;
     }
 }
+.banner .navbar .second-nav,
 .banner .navbar .first-nav{
     display:none;
 }
 @media screen and (min-width:1280px) {
+    .banner .navbar .second-nav,
     .banner .navbar .first-nav{
         display:block;
     }
 }
-.banner .navbar .second-nav li:nth-child(1),
-.banner .navbar .second-nav li:nth-child(2){
-    display:none;
-}
-@media screen and (min-width:1280px) {
-    .banner .navbar .second-nav li:nth-child(1),
-    .banner .navbar .second-nav li:nth-child(2){
-        display:block;
-    }
-}
-
 .banner .navbar ul{
     list-style-type: none;
     margin:0;
@@ -89,12 +85,6 @@ body{
     font-size: 0.9rem;
     font-weight: 700;
 }
-
-.banner .navbar .second-nav li:last-child a{
-    font-size: 1.6rem;
-}
-
-
 /* SIDE MENU */
 nav.side-menu{
     position: fixed;
@@ -117,15 +107,20 @@ nav.side-menu{
     -ms-transition: transform 0.5s;
     -o-transition: transform 0.5s;
     z-index: 99;
+    overflow-y: scroll;
 }
-
 @media screen and (min-width:600px) {
     nav.side-menu{
         left:auto;
         width:200px;
     }
 }
-
+@media screen and (min-width:1280px) {
+    nav.side-menu .menu2,
+    nav.side-menu .menu3{
+        display: none;
+    }
+}
 nav.side-menu ul{
     list-style-type: none;
     margin:0;
@@ -133,24 +128,27 @@ nav.side-menu ul{
     margin-top: 30px;
     line-height: 50px;
 }
-
 nav.side-menu ul a{
     text-decoration: none;
     color: white;
     font-size: 0.9rem;
     display: block;
 }
-
 nav.side-menu ul.menu1 i{
     font-size: 1.3rem;
     margin-left:5px;
 }
-
 nav.side-menu > label{
     font-size: 1.5rem;
 }
-
-
+.side-menu-icon{
+    position: absolute;
+    right:30px;
+    top:32px;
+    z-index: 5;
+    font-size: 1.6rem;
+    color :white;
+}
 .chkMenu{
     display: none;
 }
@@ -161,46 +159,37 @@ nav.side-menu > label{
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
 }
-
 .banner::before{
-    content: '';
-    transition: background-color 1s;
-    -webkit-transition: background-color 1s;
-    -moz-transition: background-color 1s;
-    -ms-transition: background-color 1s;
-    -o-transition: background-color 1s;
-}
-
-.chkMenu:checked ~.banner::before{
     content: "";
-    background-color: rgb(188, 183, 183);
+    transition:background-color 1s;
+    -webkit-transition:background-color 1s;
+    -moz-transition:background-color 1s;
+    -ms-transition:background-color 1s;
+    -o-transition:background-color 1s;
+}
+.chkMenu:checked ~ .banner::before{
+    content: "";
+    background-color: white;
     position: absolute;
-    top: 0; left: 0; right: 0;bottom: 0;
+    top:0; left:0; right:0; bottom:0;
     opacity: 0.3;
     z-index: 1;
 }
-
 label[for="chkMenu"]{
-    cursor:pointer;
+    cursor: pointer;
 }
-
-
-/* !Banner Content */
-
+/* BANNER CONTENT */
 .banner .content{
     color: white;
     text-align: center;
-
 }
-
 .banner .content h1{
-    font-size: 2.7rem;
-    margin: 0;
+    font-size: 2.5rem;
+    margin:0;
 }
-
 .banner .order-form{
     position: absolute;
-    bottom: 0;
+    bottom:0;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -208,8 +197,95 @@ label[for="chkMenu"]{
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     text-align: center;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media screen and (min-width: 700px) {
+    .banner .order-form{
+        width:600px;
+    }
 }
 .banner .order-form form{
     display: flex;
     flex-direction: column;
+    gap:20px;
+}
+@media screen and (min-width: 960px) {
+    .banner .order-form form{
+        flex-direction: row;
+    }
+}
+.banner .order-form input{
+    background-color: rgba(255, 255, 255, 0.228);
+    padding:15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border:1px solid white;
+    font-size: 0.8rem;
+    flex: 5;
+}
+
+.banner .order-form button{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border:1px solid white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    flex: 2;
+}
+
+.banner .order-form .map a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.banner .order-form .privacy{
+    color: gray;
+    font-size:0.7rem;
+}
+
+.banner .order-form .privacy a{
+    color: rgba(255, 255, 255, 0.578);
+}
+
+.banner .order-form .scroll i{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+/* !MAIN */
+
+main > section{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+@media screen and(min-width:1280px) {
+    main >  section{
+        flex-direction: row;
+    }   
+}
+
+main > section > div{
+    flex:1 50%;
+}
+
+main img{
+    width: 100%;
+    height: 70%;
 }
