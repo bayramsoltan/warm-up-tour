@@ -9,7 +9,6 @@
     max-width: 1200px;
     margin:auto;
     font-family: 'Raleway', sans-serif;
-    
 }
 
 header{
@@ -18,7 +17,6 @@ header{
     justify-content: space-between;
     padding: 2rem 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.337);
-
 }
 
 header .nav-menu ul, .nav-social ul{
