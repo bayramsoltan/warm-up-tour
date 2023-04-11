@@ -2,11 +2,16 @@
 1. COMMON
 2. BANNER
 */
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin:0;
     padding:0;
     background-color: black;
+    overflow-x: hidden;
 }
 /* BANNER */
 .banner{
@@ -275,17 +280,175 @@ main > section{
     color: white;
 }
 
-@media screen and(min-width:1280px) {
+@media screen and(min-width:1200px) {
     main >  section{
         flex-direction: row;
-    }   
+    }
+
+    main > section.reverse{
+        flex-direction: row-reverse;
+    }
 }
+
 
 main > section > div{
     flex:1 50%;
 }
 
+main > section > div:last-child{
+    padding: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width:700px) {
+    main > section > div:last-child{
+        padding: 50px 20%;
+    }
+}
+@media screen and (min-width:1200px) {
+    main > section > div:last-child{
+        padding: 50px 150px 50px 70px;
+        align-items: flex-start;
+    }
+}
+
+main > section h2{
+    font-size: 2.2rem;
+}
+
+@media screen and (min-width:800px) {
+    main > section > div:last-child{
+        font-size: 2rem;
+    }
+}
+
+
+main > section p{
+    line-height: 25px;
+}
+
+main > section  button{
+    background:none;
+    border:2px solid white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+@media screen and (min-width:800px) {
+    main > section > div:last-child{
+        width: 70%;
+    }
+}
+
+
 main img{
+    object-fit: cover;
     width: 100%;
-    height: 70%;
+    height: 500px;
+}
+
+@media screen and(min-width:1200px){
+    main img{
+        height: 100vh;
+    }
+}
+
+
+/*Travel */
+
+main > section.travel > div{
+    position: absolute;
+
+}
+
+
+@media screen and(min-width:960px) {
+    main > section.travel > div{
+        top:50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+
+}
+}
+
+@media screen and(min-width:1200px) {
+    main > section.travel > div{
+        left: 50px;
+        width:50%;
+    }
+}
+
+main > section.travel > img{
+    height: 100vh;
+}
+
+main > section .buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:10px;
+}
+
+main > section .buttons button{
+    flex: 1;
+}
+
+@media screen and(min-width:1200px) {
+    main > section .buttons{
+        flex-direction: row;
+    }
+}
+
+
+main > section.testimonals{
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(25, 21, 21);
+    line-height: 30px;
+}
+
+
+@media screen and(min-width:1200px) {
+    main > section.testimonals{
+        padding:10%; 
+    }
+}
+
+
+main > section.testimonals ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-size: 1.3rem;
+
+}
+
+
+@media screen and(min-width:960px) {
+    main > section.testimonals ul{
+        flex-direction: row;
+    }
+}
+
+section.line-spacer span{
+    display: block;
+    height: 150px;
+    width: 1px;
+    background-color: white;
+    margin:30px auto;
 }

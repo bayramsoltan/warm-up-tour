@@ -11,6 +11,7 @@ div.container{
     justify-content:space-between;
     flex-direction: column;
     height: 100vh;
+    padding: 20px;
 }
 
 /* !RIGHT SIDE */
@@ -19,7 +20,7 @@ div.container .sag{
     flex: 33;
 
     position: relative;
-
+    background-color: azure;
     display: flex;
     align-items: center;
     justify-content: center;
