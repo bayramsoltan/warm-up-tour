@@ -201,3 +201,83 @@ section.video-section .container{
 section.video-section .container p{
     font: 1.2rem;
 }
+
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-upper{
+    background-color:var(--color5);
+    padding: 20px;
+}
+.footer-upper .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:30px;
+    color:var(--body);
+}
+
+.footer-upper .container h4{
+    border-bottom: 2px solid var(--body);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-upper .footer-links{
+    flex: 1 1 250px;
+}
+
+.footer-lower{
+    background-color: var(--color1);
+    padding: 30px;
+    text-align: center;
+    color: var(--body);
+}
+
+@media  screen and(max-width:600px) {
+    nav.container-nav{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    section.overview-section .container h1{
+        font-size:4rem;
+    }
+    section.overview-section .container h3{
+        font-size:1.8rem
+    }
+    section.overview-section .container p{
+        font-size: 1.3rem;
+    }
+
+    .about-music-section{
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .gift-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gift-content{
+        text-align: center;
+        margin: 10px;
+    }
+
+}
+
+@media screen and(max-width:570px) {
+    
+    
+}
