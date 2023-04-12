@@ -6,6 +6,7 @@
     --color1:white;
     --color2:#48137a;
     --color3:rgb(254, 253, 253);
+    --color4:black;
 }
 
 body{
@@ -67,6 +68,11 @@ div.container .sag-ust{
     padding: 5px;
 }
 
+.sag > .sag-ust > a:hover{
+    color:var(--color4);
+    font-weight: 800;
+}
+
 .sag > h2{
     font-size: 2rem;
     text-transform: uppercase;
@@ -102,6 +108,12 @@ div.container .sag-ust{
         text-transform: uppercase;
 }   
 
+
+.sag button:hover{
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
 /*!left side */
 
 
@@ -133,7 +145,7 @@ div.container .sol{
 
 .sol h1{
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 600;
     text-shadow: 2px 2px 3px var(--color2);
 }
@@ -141,7 +153,7 @@ div.container .sol{
 .sol h3{
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: 10px;
     text-shadow: 2px 2px 3px var(--color2);
 }
@@ -155,20 +167,12 @@ div.container .sol{
         display: flex;
         flex-direction: row;
     }
-}
-
-
-@media screen and(max-width:850px) {
-    div.container .sag{
-        height: 100vh;
-    }
-
     .sol h1{
-        font-size: 3rem;
+        font-size: 5rem;
     }
     
     .sol h3{
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
 }
