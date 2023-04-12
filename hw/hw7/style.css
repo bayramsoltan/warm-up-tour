@@ -3,31 +3,56 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    --color1:white;
+    --color2:#48137a;
+    --color3:rgb(254, 253, 253);
 }
 
+body{
+    background-color: var(--color2);
+    padding: 20px;
+}
+
+
 div.container{
-    background-color: #8a2be2;
     display: flex;
     justify-content:space-between;
     flex-direction: column;
-    height: 100vh;
-    padding: 20px;
+    height: 95vh;
 }
 
 /* !RIGHT SIDE */
 
 div.container .sag{
     flex: 33;
-
     position: relative;
-    background-color: azure;
+    background-color: var(--color3);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+
+    
 }
 
+
+.sag > .sag-ust > span{
+    border: 2px solid var(--color2) ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 3px;
+    font-size: 1.3rem;
+    color: var(--color2);
+}
 div.container .sag-ust{
     position: absolute;
     left: 30px;
@@ -35,7 +60,47 @@ div.container .sag-ust{
 }
 
 
+.sag > .sag-ust > a{
+    text-decoration: none;
+    color: var(--color2);
+    font-size: 1.3rem;
+    padding: 5px;
+}
 
+.sag > h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 50px 0;
+}
+
+
+.sag > input{
+    width: 60%;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid var(--color2);
+    background:none;
+    padding: 10px;
+
+}
+.sag button{
+        margin: 70px 0;
+        padding: 10px 50px;
+
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--color1);
+        background-color: var(--color2);
+        
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        box-shadow: 2px 3px 3px black;
+        text-transform: uppercase;
+}   
 
 /*!left side */
 
@@ -50,20 +115,60 @@ div.container .sol{
     flex-direction: column;
 
     background-image: url(img/bg-login.jpg);
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
 
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
 
+
+    color: var(--color1);
+
+    padding: 50px;
+}
+
+.sol h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px var(--color2);
+}
+
+.sol h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 3px var(--color2);
 }
 
 
 /*  Media Queries */
 
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:850px) {
     div.container{
         display: flex;
         flex-direction: row;
     }
+}
+
+
+@media screen and(max-width:850px) {
+    div.container .sag{
+        height: 100vh;
+    }
+
+    .sol h1{
+        font-size: 3rem;
+    }
+    
+    .sol h3{
+        font-size: 1.2rem;
+    }
+
 }
