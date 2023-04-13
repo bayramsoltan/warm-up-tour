@@ -1,55 +1,47 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+
+    box-sizing: border-box;
+
     --color1:white;
     --color2:#48137a;
     --color3:rgb(254, 253, 253);
     --color4:black;
+
 }
 
 body{
     background-color: var(--color2);
+    font-family: "Raleway";
+    height: 100%;
+    width: 100%;
     padding: 20px;
 }
-
 
 div.container{
     display: flex;
-    justify-content:space-between;
-    flex-direction: column;
-    height: 95vh;
-
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    
-    box-sizing: border-box;
-    padding: 20px;
-    width: 100%;
     height: 93vh;
 }
 
-/* !RIGHT SIDE */
-
-div.container .sag{
+/*           !LEFT DIV           */
+div.container .sol{
     flex: 33;
-    background-color: var(--color3);
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
+    background-color: var(--color3);
     position: relative;
 
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;   
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
 }
 
-
-.sag > .sag-ust > span{
+.sol > .sol-ust > span{
     border: 2px solid var(--color2) ;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -60,26 +52,26 @@ div.container .sag{
     font-size: 1.3rem;
     color: var(--color2);
 }
-div.container .sag-ust{
+div.container .sol-ust{
     position: absolute;
     left: 30px;
     top: 20px;
 }
 
 
-.sag > .sag-ust > a{
+.sol > .sol-ust > a{
     text-decoration: none;
     color: var(--color2);
     font-size: 1.3rem;
     padding: 5px;
 }
 
-.sag > .sag-ust > a:hover{
+.sol > .sol-ust > a:hover{
     color:var(--color4);
     font-weight: 800;
 }
 
-.sag > h2{
+.sol > h2{
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -87,7 +79,7 @@ div.container .sag-ust{
 }
 
 
-.sag > input{
+.sol > input{
     width: 60%;
     margin: 10px;
     border: none;
@@ -96,7 +88,7 @@ div.container .sag-ust{
     padding: 10px;
 
 }
-.sag button{
+.sol button{
         margin: 70px 0;
         padding: 10px 50px;
 
@@ -104,7 +96,6 @@ div.container .sag-ust{
         font-weight: 700;
         color: var(--color1);
         background-color: var(--color2);
-        outline: none;
         
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -116,16 +107,14 @@ div.container .sag-ust{
 }   
 
 
-.sag button:hover{
+.sol button:hover{
     background-color: var(--color1);
     color: var(--color2);
 }
 
-/*!left side */
 
-
-
-div.container .sol{
+/*           !RIGHT DIV             */
+div.container .sag{
     flex: 66;
 
     display: flex;
@@ -133,7 +122,7 @@ div.container .sol{
     justify-content: center;
     flex-direction: column;
 
-    background-image: url(img/bg-login.jpg);
+    background-image: url(../img/bg-login.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,51 +130,53 @@ div.container .sol{
    
     color: var(--color1);
 
-    padding: 50px;
-
     border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-.sol h1{
+.sag > h1{
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 600;
     text-shadow: 2px 2px 3px var(--color2);
 }
 
-.sol h3{
+.sag > h3{
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 10px;
     text-shadow: 2px 2px 3px var(--color2);
 }
 
 
-/*  Media Queries */
 
 
-@media screen and (min-width:850px) {
+/* 768px-e kadar olan ekranlarda */
+
+
+@media screen and (max-width:768px) {
     div.container{
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
-
     div.container .sol{
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     div.container .sag{
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    } 
-    .sol h1{
-        font-size: 5rem;
-    }
-    
-    .sol h3{
-        font-size: 2rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        padding: 100px 0;
     }
 
+    .sag > h1{
+        font-size: 3rem;
+    }
+    .sag > h3{
+        font-size: 1rem
+    }
 }
