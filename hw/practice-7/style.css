@@ -3,7 +3,7 @@
     width: 100%;
 
     --color1:green;
-    --color2:rgb(164, 159, 159);
+    --color2:rgb(200, 194, 194);
     --color3:white;
 }
 
@@ -20,6 +20,8 @@ div.container .ust-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-right: 20px;
 }
 
 .ust-menu div ul.home-menu{
@@ -27,8 +29,23 @@ div.container .ust-menu{
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
+}
 
-    
+.ust-menu div .chk-label{
+    display: none;
+    background-color: var(--color1);
+    padding: 8px;
+}
+.ust-menu div .chk-box{
+   display: none;
+}
+.ust-menu div .hidden-menu{
+   display: none;
+}
+
+.ust-menu div .chk-box:checked  + .hidden-menu{
+    display:flex;
+    flex-direction: column;
 }
 
 ul.home-menu li{
@@ -41,8 +58,13 @@ ul.home-menu li a{
     color:var(--color3);
     text-decoration: none;
 }
+
+ul.home-menu li:hover {
+    background-color:var(--color2);
+}
+
 .ust-menu div img{
-    width: 50%;
+    width: 400px;
 }
 
 /* !MAIN */
@@ -50,30 +72,58 @@ ul.home-menu li a{
 
 main{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    margin-top: 70px;
+    margin-right: 30px;
+    margin-left: 30px;
+
 }
+
+/*     MAIN LEFT     */
+
 
 main .left{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex: 3;
+
+    border: 2px solid red;
 }
 
 main .left .left-pic img{
-    width:50%;
+    width: 300px;
 }
+
+/*     MAIN RIGHT     */
 
 main .right{
     background-color: var(--color2);
-    text-align: center;
+
+    border: 2px solid crimson;
+
+    flex:1;
+    margin-left: 30px;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+
+main .right div{
+    display: flex;
+    justify-content: center;
 }
 
 main .right div img{
-    width: 50%;
+    width: 300px;
+    margin:10px 0;
 
     border: 1px solid rgb(0, 0, 0);
 }
+/*     !FOOTER     */
 
 footer{
     display: flex;
@@ -87,13 +137,10 @@ footer{
    
     background-color:var(--color2);
 
-    padding: 30px;
+    padding: 20px;
 }
 
 
-footer div:nth-child(2){
-    
-}
 
 footer div{
     border: 2px solid green;
@@ -105,3 +152,23 @@ footer div img{
 
     border:3px solid red;
 }
+
+/* !MEDIA  */
+
+
+@media screen and (max-width:768px) {
+    .ust-menu div .home-menu{
+        display: none;
+    }
+
+    .ust-menu div .chk-label{
+        display: flex;
+    }
+     
+    .ust-menu div img{
+        width: 300px;
+    }
+    
+    
+}
+    
