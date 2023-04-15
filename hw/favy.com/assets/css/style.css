@@ -1,0 +1,122 @@
+:root{
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Quicksand';
+
+    --color1:red;
+    --color2:purple;
+    --color3:rgb(237, 160, 145);
+    --color4:white;
+    --color5:black;
+}
+
+body{
+    background-color: var(--color3);
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--color2);
+
+    padding: 10px 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+div.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    
+}
+
+div.menu ul li{
+    list-style-type: none;
+}
+
+div.menu ul li a{
+    text-decoration: none;
+    color: var(--color5);
+    font-weight: 600;
+}
+div.menu ul li:first-child a{
+   color:var(--color1);
+}
+
+main .ust-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main .ust-div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color4);
+    
+    width:200px;
+    height:150px;
+    padding: 10px;
+
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+main .alt-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+main .alt-div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color4);
+
+    width:200px;
+    height:150px;
+    padding: 10px;
+
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
