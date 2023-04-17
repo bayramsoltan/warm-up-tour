@@ -52,7 +52,15 @@ div.menu{
     align-items: center;
     justify-content: space-around;
 }
-
+ 
+div.menu i{
+    position: relative;
+    transform: translateY(-50);
+    -webkit-transform: translateY(-50);
+    -moz-transform: translateY(-50);
+    -ms-transform: translateY(-50);
+    -o-transform: translateY(-50);
+}
 div.menu ul{
     display: flex;
     align-items: center;
