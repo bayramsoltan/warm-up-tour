@@ -1,0 +1,15 @@
+.hightlight{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hightlight .card .card-footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.hightlight .card .card-footer > div{
+    border-right: 1px solid #ccc;
+}
+
+
