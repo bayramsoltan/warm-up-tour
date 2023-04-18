@@ -3,21 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(20, 79, 59);
+}
 
 header nav {
     padding:20px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid gray;
-    background-color: green;
+    border-bottom: 4px solid rgb(8, 2, 2);
+    background-color: rgb(128, 0, 0);
+    color: #ffffff;
+
 }
 header nav ul{
     position: absolute;
     left:0;
     display:none;
-    background-color: green;
+    background-color: #800000;
     height: 100%;
-    border: 2px solid red;
+    border: 2px solid rgb(128, 0, 0);
+    transform: translate(0,100px);
+    
+    -webkit-transform: translate(0,30px);
+    -moz-transform: translate(0,100px);
+    -ms-transform: translate(0,100px);
+    -o-transform: translate(0,100px);
+    z-index: -1;
+    overflow: hidden;
 }
 
 header nav ul li{
