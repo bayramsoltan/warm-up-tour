@@ -1,0 +1,32 @@
+:root{
+    --mavi:blue;
+    --kirmizi:red;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+  }
+  html {    
+    height: 100%;
+    width: 100%;
+  }
+
+  main .container{
+    padding: 15px;
+  } 
+  main .container tr img {
+    margin-right:15px;
+    border: 2px solid black;
+  }
+  
+  main .container a{
+    text-decoration: none;
+    color: var(--mavi);
+  }
+  
+  main .container td:hover a{
+    cursor:pointer;
+    color: var(--kirmizi);
+    text-decoration: underline;
+  }
+  
