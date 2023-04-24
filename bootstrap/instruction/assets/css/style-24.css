@@ -1,0 +1,16 @@
+.carousel, 
+.carousel > .carousel-inner, 
+.carousel > .carousel-inner > .carousel-item{
+    height: 100vh;
+}
+
+.carousel img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right bottom;
+}
+
+.navbar{
+    background-color: rgba(240, 255, 255, 0.438);
+}
