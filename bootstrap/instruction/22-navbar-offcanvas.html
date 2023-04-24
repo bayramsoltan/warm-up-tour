@@ -1,3 +1,120 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practise Navbar Offcanvas</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+          <a href="#" class="navbar-brand">LOGO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mainMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="sideMenu"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                Quick Launch
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <form action="" class="d-flex mt-3 mt-lg-0">
+                  <input type="text" class="form-control">
+                  <button class="btn btn-outline-light">Search</button>
+                </form>
+                <ul class="navbar-nav ms-right">
+                  <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
+
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+          <a href="#" class="navbar-brand">LOGO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mainMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="sideMenu"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                Quick Launch
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <form action="" class="d-flex mt-3 mt-lg-0">
+                  <input type="text" class="form-control">
+                  <button class="btn btn-outline-light">Search</button>
+                </form>
+                <ul class="navbar-nav ms-right">
+                  <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
+  </body>
+</html>
+
+
+<!--neeewww-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,9 +142,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="offcanvas offcanvas-end"
+          class="offcanvas offcanvas-start"
           tabindex="-1"
-          id="sideMenu"
+          id="mainMenu"
           aria-labelledby="offcanvasExampleLabel"
         >
           <div class="offcanvas-header">
@@ -46,8 +163,9 @@
                 <input type="text" class="form-control">
                 <button class="btn btn-outline-light">Search</button>
               </form>
-              <ul class="navbar-nav ms-right">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+    
+              <ul class="navbar-nav align-items-end flex-grow-1 justify-content-lg-end">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
@@ -63,6 +181,13 @@
     ></script>
   </body>
 </html>
+
+
+
+
+
+
+
 
 
 
