@@ -11,6 +11,16 @@
     object-position: right bottom;
 }
 
+.carousel .carousel-caption{
+    top:50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
 .navbar{
     background-color: rgba(240, 255, 255, 0.438);
 }
