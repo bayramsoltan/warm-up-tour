@@ -1,0 +1,65 @@
+.search-bar{
+    padding-top:20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar .logo{
+    font-size:2rem;
+    color: red;
+    box-shadow: 0 1px 4px black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar h1{
+    color: navy;
+    margin: 0;
+    font-weight: normal;
+}
+
+.search-bar .input-group{
+    box-shadow: 0 1px 3px rgba(91, 89, 89, 0.504);
+}
+
+.search-bar .input-group-text{
+    background-color: white;
+    padding-left: 30px;
+}
+
+.search-bar .form-control{
+    border-left: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: brown;
+    color: white;
+}
+
+.accordion-collapse{
+    background-color: rgb(15, 129, 215);
+}
+
+@media screen and (min-width:768px) {
+    .search-bar{
+        background-image: url(../img/youtube.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .search-bar .input-group{
+        width: 600px;
+    };
+}
