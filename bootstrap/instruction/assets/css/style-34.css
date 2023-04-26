@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(77, 166, 136);
+}
+
+.register-form{
+    text-align: center;
+}
+
+.register-form .card-body{
+    padding: 30px 50px;
+}
+
+.register-form .avatar{
+    background-color: rgb(61, 61, 163);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 2.3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+/* !register-form.card cunki ikiside ayni class'da*/
+.register-form.card{
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.register-form form{
+    margin: 50px 0 20px 0;
+}
+
+.register-form form input, .register-form form button{
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 8px 25px;
+}
+.register-form .card-footer{
+    background-color: white;
+    padding: 30px;
+}
+.register-form .card-footer h5{
+    color: gray;
+}
+.register-form .card-footer .icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.register-form .card-footer .icons a{
+    border: 1px solid rgb(61, 61, 163);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
