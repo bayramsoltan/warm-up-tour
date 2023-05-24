@@ -1,0 +1,80 @@
+body {
+    font-family: 'Pangolin', cursive;
+}
+
+.weather-card {
+    background-color: #97529c;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    >.left-panel {
+        flex: 2 1 200px;
+        background-image: url("../img/bg.jpg");
+        background-size: cover;
+        background-position: center center;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+
+        &::before{
+            content: "";
+            background-color: #97529c84;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom:0;
+}
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 0;
+            text-shadow: 0 0 5px rgb(48, 43, 43);
+        }
+
+
+        >.date {
+            z-index: 1;
+            h2 {
+                font-size: 2rem;
+            }
+
+            h4,
+            h5 {
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+
+        }
+
+        >.temp{
+            z-index: 1;
+            h2,h3{
+                font-size: 3rem;
+                line-height:3.5rem;
+            }
+        }
+    }
+
+
+
+    >.right-panel {
+        flex: 3 1 300px;
+    }
+}

@@ -4,12 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SASS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Weather Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        SASS is just started!
-    </header>
+    <section class="weather-card">
+        <div class="left-panel">
+            <div class="date">
+                <h2>Sunday</h2>
+                <h4>22 January 2023</h4>
+                <h5><i class="fa-solid fa-location-dot"></i>Mary,TKM</h5>
+            </div>
+            <div class="temp">
+                <h2><i class="fa-solid fa-sun"></i></h2>
+                <h3>24&deg;C</h3>
+                <h5>Sunny</h5>
+            </div>
+        </div>
+        <div class="right-panel">
+            <ul class="status">
+                <li><span>PRECIPITION</span><span>0%</span></li>
+                <li><span>HUMIDITY</span><span>34%</span></li>
+                <li><span>WIND</span><span>0 km/h</span></li>
+            </ul>
+            <ul class="days">
+                <li>
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <span>Sun</span>
+                    <span>29&deg;C</span>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-cloud-moon-rain"></i></span>
+                    <span>Mon</span>
+                    <span>24&deg;C</span>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-cloud-sun"></i></span>
+                    <span>Tue</span>
+                    <span>22&deg;C</span>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-cloud-rain"></i></span>
+                    <span>Wed</span>
+                    <span>20&deg;C</span>
+                </li>
+            </ul>
+            <button><i class="fa-solid fa-location-dot"></i> Change Location</button>
+        </div>
+    </section>
 </body>
 </html>

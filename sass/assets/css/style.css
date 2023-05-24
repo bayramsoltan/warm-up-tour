@@ -1,0 +1,69 @@
+body {
+  font-family: "Pangolin", cursive;
+}
+
+.weather-card {
+  background-color: #97529c;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.weather-card > .left-panel {
+  flex: 2 1 200px;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.weather-card > .left-panel::before {
+  content: "";
+  background-color: rgba(151, 82, 156, 0.5176470588);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.weather-card > .left-panel h2,
+.weather-card > .left-panel h3,
+.weather-card > .left-panel h4,
+.weather-card > .left-panel h5 {
+  margin: 0;
+  text-shadow: 0 0 5px rgb(48, 43, 43);
+}
+.weather-card > .left-panel > .date {
+  z-index: 1;
+}
+.weather-card > .left-panel > .date h2 {
+  font-size: 2rem;
+}
+.weather-card > .left-panel > .date h4,
+.weather-card > .left-panel > .date h5 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.weather-card > .left-panel > .temp {
+  z-index: 1;
+}
+.weather-card > .left-panel > .temp h2, .weather-card > .left-panel > .temp h3 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.weather-card > .right-panel {
+  flex: 3 1 300px;
+}/*# sourceMappingURL=style.css.map */
