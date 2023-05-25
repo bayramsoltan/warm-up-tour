@@ -1,0 +1,63 @@
+@use "variables" as v;
+@use "mixins" as m;
+.weather-card{
+    background-color: v.$color1;
+    color: white;
+   
+    @include m.flex($fd:row);
+    @include m.border-radius(20px);
+    > .left-panel{
+        flex: 2 1 200px;
+        background-image: v.$card-bg-image;
+        background-size: cover;
+        background-position: center center;
+        
+        @include m.border-radius(20px);
+        @include m.flex();
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: "";
+            background-color: v.$color2;
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+        }
+        h2, h3, h4, h5{
+            margin: 0;
+            text-shadow: 0 0 5px v.$color1;
+        }
+        > .date{
+            z-index: 1;
+            h2{
+                font-size: 2rem;
+            }
+            h4,h5{
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+        }
+        > .temp{
+            z-index: 1;
+            h2, h3{
+                font-size: 3rem;
+                line-height: 3.5rem;
+            }
+            
+        }
+    }
+    > .right-panel{
+        flex:3 1 300px;
+        padding: 20px;
+        @include m.flex($gap:30px);
+
+        ul.status{
+            @include m.reset
+        }
+
+
+    }
+}

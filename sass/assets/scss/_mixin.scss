@@ -1,0 +1,22 @@
+@mixin border-radius($val){
+    border-radius: $val;
+    -webkit-border-radius: $val;
+    -moz-border-radius: $val;
+    -ms-border-radius: $val;
+    -o-border-radius: $val;
+}
+
+@mixin flex($fd: column, $jc:space-between,$ai: stretch, $gap:0,$fw:wrap){
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap:$gap;
+    flex-wrap: $fw;
+}
+
+@mixin reset-list($p:0, $m:0){
+    list-style-type: none;
+    padding:$p;
+    margin:$m;
+}
