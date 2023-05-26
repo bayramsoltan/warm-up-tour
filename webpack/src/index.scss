@@ -1,0 +1,13 @@
+$success: rgb(251, 255, 21);
+$border-radius:30px;
+@import "bootstrap/scss/bootstrap";
+
+
+
+body{
+    background-color: crimson;
+
+    button{
+        background-color: chartreuse;
+    }
+}

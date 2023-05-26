@@ -1,5 +1,6 @@
 import{setItem} from "./utils/storage";
-import "./index.css";
+import "./index.scss";
+import "bootstrap";
 
 document.getElementById("btnSayHello").addEventListener("click",()=>{
     alert("Hi, Webpack!");

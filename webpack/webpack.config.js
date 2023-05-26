@@ -7,12 +7,17 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
   },
-  module:{
-    rules:[
-        {
-            test:/\.css$/,
-            use:["style-loader","css-loader"]
-        }
-    ]
-}
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+
+      {
+        test: /\.s(a|c)ss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+    ],
+  },
 };
