@@ -1,29 +1,16 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require("path");
+const {merge}=require("webpack-merge");
+const common = require("./webpack.common");
 
-module.exports = {
+
+const prod = {
   mode: "production",
-  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.[contenthash].js",
     clean:true
   },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-
-      {
-        test: /\.s(a|c)ss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-    ],
-  },
-  plugins: [new HtmlWebpackPlugin({
-    template: "./src/index.html",
-    inject:"body"
-  })],
 };
+
+module.exports = merge(common,prod);
