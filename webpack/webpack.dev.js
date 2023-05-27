@@ -10,7 +10,7 @@ const dev = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "./js/[name].js",
     clean: false,
   },
 };

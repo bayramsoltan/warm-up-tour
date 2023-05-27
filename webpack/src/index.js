@@ -1,6 +1,5 @@
 import{setItem} from "./utils/storage";
 import "./index.scss";
-import "bootstrap";
 
 document.getElementById("btnSayHello").addEventListener("click",()=>{
     alert("Hi, study hard!");
