@@ -14,6 +14,14 @@ module.exports = {
         test: /\.s(a|c)ss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test:/\.html$/,
+        use:["html-loader"]
+      },
+      {
+        test:/\.(png|jpg|svg|gif|jpeg)$/,
+        type:'asset/resource'
+      }
     ],
   },
   plugins: [new HtmlWebpackPlugin({

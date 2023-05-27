@@ -13,6 +13,7 @@
   "devDependencies": {
     "bootstrap": "^5.2.3",
     "css-loader": "^6.7.4",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.1",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.0",

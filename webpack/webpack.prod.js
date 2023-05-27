@@ -9,7 +9,8 @@ const prod = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.[contenthash].js",
-    clean:true
+    clean:true,
+    assetModuleFilename: "img/[hash][ext]"
   },
 };
 
