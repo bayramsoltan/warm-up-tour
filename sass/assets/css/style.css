@@ -1,11 +1,43 @@
 body {
-  font-family: "Pangolin", cursive;
+  font-family: "Poppins";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button, .weather-card > .right-panel .btn-change {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-image: linear-gradient(90deg, rgb(217, 122, 227), rgb(144, 14, 158));
+}
+
+.youtube {
+  color: red;
+}
+
+.instagram {
+  color: green;
+}
+
+.facebook {
+  color: blue;
 }
 
 .weather-card {
-  background-color: #97529c;
-  color: white;
+  background-color: rgb(0, 0, 84);
+  color: rgb(234, 234, 234);
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
   flex-wrap: wrap;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -26,25 +58,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: wrap;
   padding: 20px;
   position: relative;
   overflow: hidden;
 }
 .weather-card > .left-panel::before {
   content: "";
-  background-color: rgba(151, 82, 156, 0.5176470588);
+  background-color: rgba(137, 43, 226, 0.647);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-.weather-card > .left-panel h2,
-.weather-card > .left-panel h3,
-.weather-card > .left-panel h4,
-.weather-card > .left-panel h5 {
+.weather-card > .left-panel h2, .weather-card > .left-panel h3, .weather-card > .left-panel h4, .weather-card > .left-panel h5 {
   margin: 0;
-  text-shadow: 0 0 5px rgb(48, 43, 43);
+  text-shadow: 0 0 5px rgb(0, 0, 84);
 }
 .weather-card > .left-panel > .date {
   z-index: 1;
@@ -52,8 +84,7 @@ body {
 .weather-card > .left-panel > .date h2 {
   font-size: 2rem;
 }
-.weather-card > .left-panel > .date h4,
-.weather-card > .left-panel > .date h5 {
+.weather-card > .left-panel > .date h4, .weather-card > .left-panel > .date h5 {
   font-size: 0.8rem;
   font-weight: 500;
 }
@@ -66,4 +97,67 @@ body {
 }
 .weather-card > .right-panel {
   flex: 3 1 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.weather-card > .right-panel ul.status {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.weather-card > .right-panel ul.status li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.weather-card > .right-panel ul.days {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.weather-card > .right-panel ul.days li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.weather-card > .right-panel ul.days li > span:nth-child(1) {
+  font-size: 2.5rem;
+}
+.weather-card > .right-panel ul.days li > span:nth-child(2) {
+  font-size: 0.8rem;
+}
+.weather-card > .right-panel ul.days li > span:nth-child(3) {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.weather-card > .right-panel ul.days li.active {
+  background-color: rgb(234, 234, 234);
+  color: rgb(0, 0, 84);
+}
+.weather-card > .right-panel .btn-change {
+  border: 2px dotted rgb(234, 234, 234);
 }/*# sourceMappingURL=style.css.map */

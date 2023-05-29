@@ -1,3 +1,5 @@
+
+
 @mixin border-radius($val){
     border-radius: $val;
     -webkit-border-radius: $val;
@@ -6,12 +8,13 @@
     -o-border-radius: $val;
 }
 
-@mixin flex($fd: column, $jc:space-between,$ai: stretch, $gap:0,$fw:wrap){
+
+@mixin flex($fd: column, $jc: space-between, $ai: stretch, $gap:0, $fw: wrap){
     display: flex;
     flex-direction: $fd;
     justify-content: $jc;
     align-items: $ai;
-    gap:$gap;
+    gap: $gap;
     flex-wrap: $fw;
 }
 
@@ -19,4 +22,8 @@
     list-style-type: none;
     padding:$p;
     margin:$m;
+}
+
+@mixin bg($key, $value){
+    background-#{$key}: $value
 }

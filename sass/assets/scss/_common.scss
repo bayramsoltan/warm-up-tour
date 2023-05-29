@@ -1,0 +1,24 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+body{
+    font-family: v.$primary-font;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.button{
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    @include m.border-radius(20px);
+    @include m.bg(image, linear-gradient(90deg, v.$color4, v.$color5));
+}
+
+@each $key, $val in v.$colors{
+    .#{$key}{
+        color: $val;
+    }
+}
